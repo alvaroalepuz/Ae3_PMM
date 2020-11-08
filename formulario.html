@@ -1,0 +1,49 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hola</title>
+    <script src="main.js"></script>
+    <link type="text/css" rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id=barra>
+        <div id=bleft>
+            <button onclick="window.location.href='url.html'">Atras</button></p>
+        </div>
+        <div id=bright>
+            <button onclick="window.location.href='confirmar.html'">Siguiente</button></p>
+        </div>
+    </div>
+    <div id=form>
+        <form action="" method="post" name="formu" id="formu">
+            Tu nombre: <input type="text" name="nombre" id="nombre"><br>
+            <span id="errores"></span>
+            Tu apellido: <input type="text" name="apellido" id="apellido"><br>
+            <span id="errores"></span>
+            Fecha: <input type="datetime" name="fecha" id="fecha"><br>
+            <span id="errores"></span>
+            Tu direccion: <input type="text" name="direccion" id="direccion"><br>
+            Tu CP: <input type="number" name="cp" size="5" id="cp"><br>
+            <span id="errores"></span>
+            Elije una provincia:
+            <select name="provincia" id="provincia">
+                <option value="Valencia" selected>Valencia</option>
+                <option value="Castellon">Castellon</option>
+                <option value="Alicante">Alicante</option>
+            </select>
+            <br><span id="demo"></span>
+
+            Tu Municipio: <input type="text" name="municipio" id="municipio"><br>
+            <span id="errores"></span>
+            <input type="submit" value="   Enviar" onclick="validarformulario()">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
